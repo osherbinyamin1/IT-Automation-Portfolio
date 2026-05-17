@@ -35,4 +35,4 @@ An IT administrator may need to review user account status, export group members
 
 ## Safety Notes
 
-These scripts are read-only. They do not disable, delete, move, or modify AD accounts or groups.
+These scripts are read-only. They do not disable, delete, move, or modify AD accounts or groups. Review exported reports before sharing them outside an internal support process.
