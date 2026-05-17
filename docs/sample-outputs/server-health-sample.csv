@@ -1,0 +1,4 @@
+"ComputerName","OSCaption","LastBootUpTime","UptimeDays","CPULoad","TotalMemoryGB","FreeMemoryGB","DiskSummary"
+"SERVER01","Microsoft Windows Server 2022 Standard","2026-05-10 03:14:02","7.26","12","32","18.4","C: 84.52 GB free of 149.46 GB; D: 410.14 GB free of 1024 GB"
+"RDS01","Microsoft Windows Server 2019 Standard","2026-05-12 01:22:41","5.34","38","64","22.7","C: 52.18 GB free of 199.45 GB; E: 220.65 GB free of 512 GB"
+"DC01","Microsoft Windows Server 2022 Standard","2026-05-09 04:00:17","8.22","8","16","9.9","C: 71.44 GB free of 127.42 GB"
