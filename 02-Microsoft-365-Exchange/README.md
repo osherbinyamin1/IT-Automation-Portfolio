@@ -35,4 +35,4 @@ Connect-ExchangeOnline -UserPrincipalName admin@contoso.com
 
 ## Safety Notes
 
-The included scripts are read-only and assume you are already connected to Exchange Online PowerShell. The runbooks avoid destructive purge commands as default actions and emphasize compliance review before cleanup.
+The included scripts are read-only and assume you are already connected to Exchange Online PowerShell. The runbooks avoid destructive purge commands as default actions and emphasize compliance review before cleanup. Sanitize mailbox names and user details before sharing any exported report.
