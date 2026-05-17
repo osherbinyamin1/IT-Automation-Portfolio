@@ -1,0 +1,4 @@
+"GroupName","Name","SamAccountName","ObjectClass","DistinguishedName"
+"IT Support","Jordan Smith","j.smith","user","CN=Jordan Smith,OU=Users,DC=contoso,DC=com"
+"IT Support","Riley Chen","r.chen","user","CN=Riley Chen,OU=Users,DC=contoso,DC=com"
+"IT Support","Endpoint Admins","endpoint.admins","group","CN=Endpoint Admins,OU=Groups,DC=contoso,DC=com"
