@@ -34,4 +34,4 @@ Support teams often need to triage user reports involving terminal server access
 
 ## Safety Notes
 
-The scripts are read-only and do not restart services, modify firewall rules, or change Group Policy.
+The scripts are read-only and do not restart services, modify firewall rules, or change Group Policy. Sanitize server names, event details, and screenshots before sharing troubleshooting evidence.
