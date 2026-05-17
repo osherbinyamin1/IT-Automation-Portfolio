@@ -33,4 +33,4 @@ Endpoint administrators often need to confirm encryption status, verify recovery
 
 ## Safety Notes
 
-The included script is reporting-focused. The runbook discusses key escrow validation conceptually and should be followed only with proper administrative authorization.
+The included script is reporting-focused. The runbook discusses key escrow validation conceptually and should be followed only with proper administrative authorization. Do not expose recovery keys, device IDs, or tenant-specific details in portfolio material.
