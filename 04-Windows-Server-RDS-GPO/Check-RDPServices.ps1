@@ -25,6 +25,7 @@ This script is read-only and does not restart services or change firewall settin
 [CmdletBinding()]
 param(
     [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
     [string]$ComputerName,
 
     [Parameter()]
@@ -43,7 +44,7 @@ catch {
 
 try {
     if (Get-Command Test-NetConnection -ErrorAction SilentlyContinue) {
-        $connection = Test-NetConnection -ComputerName $ComputerName -Port $Port -InformationLevel Quiet
+        $connection = Test-NetConnection -ComputerName $ComputerName -Port $Port -InformationLevel Quiet -WarningAction SilentlyContinue
         $connectivityNote = if ($connection) { 'Port reachable' } else { 'Port not reachable' }
     }
     else {

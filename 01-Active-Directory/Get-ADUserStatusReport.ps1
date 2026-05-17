@@ -29,9 +29,11 @@ This script is read-only and does not modify Active Directory.
 [CmdletBinding()]
 param(
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$SearchBase,
 
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$OutputPath,
 
     [Parameter()]
@@ -77,7 +79,7 @@ try {
     }
 
     if ($OutputPath) {
-        $report | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8
+        $report | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8 -ErrorAction Stop
     }
 
     $report

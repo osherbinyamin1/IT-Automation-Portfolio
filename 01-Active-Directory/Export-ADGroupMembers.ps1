@@ -28,12 +28,14 @@ This script is read-only and does not modify Active Directory.
 [CmdletBinding()]
 param(
     [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
     [string]$GroupName,
 
     [Parameter()]
     [switch]$Recursive,
 
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$OutputPath
 )
 
@@ -61,7 +63,7 @@ try {
     }
 
     if ($OutputPath) {
-        $report | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8
+        $report | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8 -ErrorAction Stop
     }
 
     $report

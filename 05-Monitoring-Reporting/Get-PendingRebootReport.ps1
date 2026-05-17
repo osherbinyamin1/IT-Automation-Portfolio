@@ -26,9 +26,11 @@ This script is read-only and does not reboot computers or modify registry values
 [CmdletBinding()]
 param(
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string[]]$ComputerName = @('localhost'),
 
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$OutputPath
 )
 
@@ -128,7 +130,7 @@ $results = foreach ($computer in $ComputerName) {
 }
 
 if ($OutputPath) {
-    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8
+    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8 -ErrorAction Stop
 }
 
 $results

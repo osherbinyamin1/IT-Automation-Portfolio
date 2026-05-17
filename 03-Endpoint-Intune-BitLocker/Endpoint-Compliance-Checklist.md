@@ -52,3 +52,5 @@ whoami /upn
 ```
 
 Review Event Viewer logs under device management, BitLocker, and Windows enrollment categories as needed.
+
+Do not paste device identifiers, recovery keys, tenant details, or user data into public tickets or portfolio screenshots.

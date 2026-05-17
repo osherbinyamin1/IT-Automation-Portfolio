@@ -25,13 +25,19 @@ This script is read-only and does not modify recipient permissions.
 [CmdletBinding()]
 param(
     [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
     [string]$MailboxIdentity,
 
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$OutputPath
 )
 
 try {
+    if (-not (Get-Command Get-RecipientPermission -ErrorAction SilentlyContinue)) {
+        throw 'Get-RecipientPermission was not found. Connect to Exchange Online PowerShell before running this script.'
+    }
+
     $permissions = Get-RecipientPermission -Identity $MailboxIdentity -ErrorAction Stop |
         Where-Object {
             $_.Trustee -ne 'NT AUTHORITY\SELF' -and
@@ -49,7 +55,7 @@ try {
     }
 
     if ($OutputPath) {
-        $report | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8
+        $report | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8 -ErrorAction Stop
     }
 
     $report

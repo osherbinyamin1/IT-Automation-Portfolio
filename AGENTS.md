@@ -2,7 +2,7 @@
 
 Instructions for future Codex tasks in this repository:
 
-- Keep scripts readable, safe, and practical for IT administration portfolios.
+- Keep scripts readable, safe, and practical for IT administration portfolio/demo use.
 - Prefer read-only reporting scripts unless a change action is explicitly requested.
 - Use comment-based help for every PowerShell script.
 - Avoid real organization data, including real domains, server names, usernames, emails, IP addresses, customer names, secrets, credentials, tenant IDs, device IDs, and internal identifiers.
@@ -14,3 +14,4 @@ Instructions for future Codex tasks in this repository:
 - Keep README files recruiter-friendly and technical-manager-friendly: professional, concise, and grounded in realistic sysadmin work.
 - Do not exaggerate ownership or claim full architecture responsibility for enterprise systems.
 - Position this portfolio around practical IT, sysadmin, Microsoft 365, identity, endpoint, and Windows administration automation.
+- Avoid wording that implies sole ownership of architecture, security programs, enterprise platforms, or production change authority unless the user explicitly provides that evidence.

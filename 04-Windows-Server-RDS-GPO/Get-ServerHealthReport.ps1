@@ -25,9 +25,11 @@ This script is read-only and does not modify target computers.
 [CmdletBinding()]
 param(
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string[]]$ComputerName = @('localhost'),
 
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$OutputPath
 )
 
@@ -51,7 +53,7 @@ $results = foreach ($computer in $ComputerName) {
             OSCaption      = $os.Caption
             LastBootUpTime = $lastBoot
             UptimeDays     = $uptimeDays
-            CPULoad        = [math]::Round($processor.Average, 2)
+            CPULoad        = if ($null -ne $processor.Average) { [math]::Round($processor.Average, 2) } else { $null }
             TotalMemoryGB  = [math]::Round($os.TotalVisibleMemorySize / 1MB, 2)
             FreeMemoryGB   = [math]::Round($os.FreePhysicalMemory / 1MB, 2)
             DiskSummary    = $diskSummary
@@ -63,7 +65,7 @@ $results = foreach ($computer in $ComputerName) {
 }
 
 if ($OutputPath) {
-    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8
+    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8 -ErrorAction Stop
 }
 
 $results

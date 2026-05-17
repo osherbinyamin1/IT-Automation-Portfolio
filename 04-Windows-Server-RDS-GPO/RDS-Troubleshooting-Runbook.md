@@ -55,4 +55,4 @@ Provide a structured process for troubleshooting a user who cannot connect to a 
 - Review TerminalServices logs.
 - Review System and Application logs around the failed connection time.
 - Check authentication, profile, licensing, and service-related events.
-- Document event IDs, timestamps, and error messages before escalation.
+- Document event IDs, timestamps, and error messages before escalation. Sanitize screenshots before adding them to tickets or portfolio material.

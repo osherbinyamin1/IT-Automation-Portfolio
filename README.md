@@ -1,13 +1,13 @@
 # IT Automation Portfolio
 
-This repository is a professional portfolio of practical IT administration automation, reporting scripts, and runbooks. It focuses on common work performed in Windows enterprise environments, Microsoft 365, identity administration, endpoint management, BitLocker, Exchange Online, RDS, GPO, and operational monitoring. The examples are designed to demonstrate safe PowerShell practices, structured output, troubleshooting discipline, and documentation that technical managers can review quickly. The work is intentionally scoped toward hands-on sysadmin and support engineering scenarios rather than exaggerated architecture claims.
+This repository is a practical IT automation portfolio focused on day-to-day Microsoft infrastructure administration. It covers common support and administration scenarios across Windows, Active Directory, Microsoft 365, Exchange Online, Entra ID, Intune/MDM, BitLocker, RDS, GPO, and operational reporting. The examples are designed to show safe PowerShell habits, structured output, troubleshooting discipline, and documentation that recruiters and technical managers can review quickly. The work is intentionally scoped toward hands-on sysadmin and support engineering tasks, not broad enterprise architecture claims.
 
 ## Technologies Covered
 
 - PowerShell scripting and automation
 - Active Directory administration
 - Microsoft 365 and Exchange Online PowerShell
-- Entra ID and endpoint identity concepts
+- Entra ID identity and device administration concepts
 - Intune, MDM, and BitLocker operational workflows
 - Windows Server, RDS, GPO, and CIM/WMI reporting
 - Windows event log, disk, reboot, and health monitoring
@@ -29,7 +29,8 @@ This repository is a professional portfolio of practical IT administration autom
 2. Run scripts from an elevated or appropriately permissioned PowerShell session when required by the target system.
 3. Connect to required services first, such as Exchange Online PowerShell or an AD management workstation with RSAT tools installed.
 4. Use `-OutputPath` parameters to export reports to CSV for review or documentation.
-5. Treat scripts as portfolio examples and adapt them carefully for any real environment.
+5. Treat scripts as portfolio/lab examples and adapt them carefully before using them in any real environment.
+6. Do not commit generated reports or screenshots unless they are fully sanitized.
 
 ## Security and Privacy Note
 
@@ -37,7 +38,7 @@ All names, domains, sample outputs, and examples in this repository are sanitize
 
 ## Disclaimer
 
-These scripts and runbooks are sanitized lab and portfolio examples. They are intended to demonstrate practical administration workflows and safe automation patterns. Validate any script in a test environment before using it in production.
+These scripts and runbooks are sanitized lab and portfolio examples. They demonstrate practical administration workflows and safe automation patterns, but they are not a substitute for environment-specific change control, peer review, or production testing.
 
 ## Relevant Roles
 

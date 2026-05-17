@@ -1,0 +1,16 @@
+# Local/generated report output
+outputs/
+reports/
+exports/
+*.log
+*.tmp
+
+# PowerShell transcripts and local test artifacts
+PowerShell_transcript*.txt
+*.clixml
+
+# Editor and OS metadata
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

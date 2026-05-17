@@ -1,6 +1,6 @@
 # Documentation
 
-This folder contains supporting artifacts for the IT Automation Portfolio.
+This folder contains supporting artifacts for the IT Automation Portfolio, including sanitized example outputs that show the expected report format.
 
 ## Contents
 
@@ -11,4 +11,4 @@ This folder contains supporting artifacts for the IT Automation Portfolio.
 
 ## Notes
 
-All sample data is fictional and uses generic names, domains, and server labels. Do not add screenshots or exports that contain real organization data, user details, domains, device names, IP addresses, tenant details, or secrets.
+All sample data is fictional and uses generic names, domains, and server labels. Do not add screenshots or exports that contain real organization data, user details, domains, device names, IP addresses, tenant details, recovery keys, or secrets.

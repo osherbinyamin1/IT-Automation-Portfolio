@@ -34,9 +34,11 @@ This script is read-only and does not clear or modify event logs.
 [CmdletBinding()]
 param(
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string[]]$ComputerName = @('localhost'),
 
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$LogName = 'System',
 
     [Parameter()]
@@ -48,6 +50,7 @@ param(
     [string]$Level = 'Error',
 
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$OutputPath
 )
 
@@ -94,7 +97,7 @@ $results = foreach ($computer in $ComputerName) {
 }
 
 if ($OutputPath) {
-    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8
+    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8 -ErrorAction Stop
 }
 
 $results

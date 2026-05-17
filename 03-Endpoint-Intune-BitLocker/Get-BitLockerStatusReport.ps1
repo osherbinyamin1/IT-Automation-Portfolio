@@ -26,13 +26,19 @@ This script is read-only and does not change BitLocker configuration.
 [CmdletBinding()]
 param(
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string[]]$ComputerName = @('localhost'),
 
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$OutputPath
 )
 
 $scriptBlock = {
+    if (-not (Get-Command Get-BitLockerVolume -ErrorAction SilentlyContinue)) {
+        throw 'Get-BitLockerVolume was not found. Confirm the BitLocker module is available on the target computer.'
+    }
+
     Get-BitLockerVolume | ForEach-Object {
         [PSCustomObject]@{
             ComputerName         = $env:COMPUTERNAME
@@ -60,7 +66,7 @@ $results = foreach ($computer in $ComputerName) {
 }
 
 if ($OutputPath) {
-    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8
+    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8 -ErrorAction Stop
 }
 
 $results

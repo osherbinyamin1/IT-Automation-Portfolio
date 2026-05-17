@@ -14,7 +14,7 @@ An IT administrator may need to review user account status, export group members
 | --- | --- |
 | `Get-ADUserStatusReport.ps1` | Reports AD user status and account metadata |
 | `Export-ADGroupMembers.ps1` | Exports members of a specified AD group |
-| `Find-InactiveADUsers.ps1` | Finds users inactive for a configurable number of days |
+| `Find-InactiveADUsers.ps1` | Finds enabled users inactive for a configurable number of days |
 
 ## Example Usage
 
@@ -22,6 +22,7 @@ An IT administrator may need to review user account status, export group members
 .\Get-ADUserStatusReport.ps1 -SearchBase "OU=Users,DC=contoso,DC=com" -OutputPath .\ad-user-status.csv
 .\Export-ADGroupMembers.ps1 -GroupName "IT Support" -Recursive -OutputPath .\group-members.csv
 .\Find-InactiveADUsers.ps1 -DaysInactive 90 -OutputPath .\inactive-users.csv
+.\Find-InactiveADUsers.ps1 -DaysInactive 180 -IncludeDisabled -OutputPath .\inactive-users-all.csv
 ```
 
 ## Skills Demonstrated

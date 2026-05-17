@@ -34,4 +34,4 @@ IT administrators often perform recurring checks before patching, after maintena
 
 ## Safety Notes
 
-These scripts are read-only. They do not clear event logs, delete files, reboot systems, or modify registry values.
+These scripts are read-only. They do not clear event logs, delete files, reboot systems, or modify registry values. Export paths should be reviewed before running so reports are written only to approved locations.

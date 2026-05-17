@@ -2,9 +2,9 @@
 
 ## Professional Summary
 
-I am an IT / SysDesk Administrator with hands-on experience supporting Windows enterprise environments, Microsoft 365, Active Directory, Entra ID, Intune/MDM, BitLocker, Exchange Online, Windows Server, RDS/Terminal Servers, GPO, endpoint administration, and PowerShell troubleshooting. This portfolio demonstrates practical automation and documentation patterns for common administration tasks: reporting, access validation, health checks, endpoint compliance review, and structured troubleshooting.
+I am an IT / SysDesk Administrator with hands-on experience supporting Windows-based business environments, Microsoft 365, Active Directory, Entra ID, Intune/MDM, BitLocker, Exchange Online, Windows Server, RDS/Terminal Servers, GPO, endpoint administration, and PowerShell troubleshooting. This portfolio demonstrates practical automation and documentation patterns for common administration tasks: reporting, access validation, health checks, endpoint compliance review, and structured troubleshooting.
 
-The repository is designed for technical reviewers who want to see how I approach real operational scenarios. It emphasizes readable scripts, safe defaults, CSV-friendly output, clear runbooks, and sanitized examples that can be reviewed without exposing any real organization data.
+The repository is intended for recruiters and technical reviewers who want to see how I approach realistic operational scenarios. It emphasizes readable scripts, safe defaults, CSV-friendly output, clear runbooks, and sanitized examples that can be reviewed without exposing real organization data.
 
 ## Key Technical Areas
 
@@ -35,7 +35,7 @@ IT teams often need a quick and reliable way to review user account status durin
 
 ### Example Use Case
 
-A sysadmin can export user account status from a specific OU before a quarterly access review and provide the output to a manager for validation.
+A sysadmin can export user account status from a specific OU before an access review and provide the output to a manager or senior administrator for validation.
 
 ### Value Delivered
 
@@ -146,4 +146,4 @@ The scripts support proactive maintenance, reduce repetitive manual checks, and 
 
 ## Notes for Recruiters and Technical Reviewers
 
-This portfolio is intended to show practical IT administration habits: safe automation, clear documentation, structured troubleshooting, and realistic Microsoft ecosystem scenarios. The scripts are mostly read-only by design and focus on reporting, validation, and support workflows. All examples use fictional data and generic names, so the repository can be reviewed publicly without exposing employer or customer information.
+This portfolio is intended to show practical IT administration habits: safe automation, clear documentation, structured troubleshooting, and realistic Microsoft ecosystem scenarios. The scripts are mostly read-only by design and focus on reporting, validation, and support workflows. They are portfolio/lab examples, not full production frameworks. All examples use fictional data and generic names, so the repository can be reviewed publicly without exposing employer or customer information.

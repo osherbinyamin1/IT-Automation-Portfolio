@@ -28,6 +28,7 @@ This script is read-only and does not delete files or modify disks.
 [CmdletBinding()]
 param(
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string[]]$ComputerName = @('localhost'),
 
     [Parameter()]
@@ -35,6 +36,7 @@ param(
     [int]$MinimumFreePercent = 15,
 
     [Parameter()]
+    [ValidateNotNullOrEmpty()]
     [string]$OutputPath
 )
 
@@ -79,7 +81,7 @@ $results = foreach ($computer in $ComputerName) {
 }
 
 if ($OutputPath) {
-    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8
+    $results | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8 -ErrorAction Stop
 }
 
 $results
