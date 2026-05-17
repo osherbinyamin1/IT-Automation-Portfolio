@@ -32,6 +32,8 @@ This repository is a practical IT automation portfolio focused on day-to-day Mic
 5. Treat scripts as portfolio/lab examples and adapt them carefully before using them in any real environment.
 6. Do not commit generated reports or screenshots unless they are fully sanitized.
 
+For job applications, use [`docs/Portfolio-For-Job-Applications.md`](docs/Portfolio-For-Job-Applications.md) as the concise portfolio attachment source.
+
 ## Security and Privacy Note
 
 All names, domains, sample outputs, and examples in this repository are sanitized and fictional. Do not add real company names, domains, IP addresses, server names, usernames, emails, tenant details, internal data, credentials, or secrets.
