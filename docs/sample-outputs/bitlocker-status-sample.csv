@@ -1,0 +1,4 @@
+"ComputerName","MountPoint","VolumeStatus","ProtectionStatus","EncryptionPercentage","KeyProtectorTypes"
+"LAPTOP01","C:","FullyEncrypted","On","100","Tpm;RecoveryPassword"
+"LAPTOP02","C:","FullyEncrypted","On","100","TpmPin;RecoveryPassword"
+"SERVER01","D:","FullyDecrypted","Off","0",""
